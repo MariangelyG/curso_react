@@ -2,18 +2,17 @@ import { TurnedInNot } from "@mui/icons-material"
 import { Box, Divider, Drawer, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material"
 
 
-export const SideBar = ({drawerWidth = 240 }) =>{
+export const SideBar = ({ drawerWidth = 240 }) =>{
     return (
         <Box 
             component='nav'
             sx={{with: { sm: drawerWidth }, flexShrink: { sm:0 } }}
         >
             <Drawer
-                variant="permanent"
+                variant='permanent'
                 open
                 sx={{
-                    display: {xs:'block'}, 
-                    '& .MuiDrawer-paper': {boxSizing: 'border-box', width: drawerWidth}
+                    display: {xs:'block'}, '& .MuiDrawer-paper': {boxSizing:'border-box', width: drawerWidth}
                 }}
             >
                 <Toolbar>
@@ -32,8 +31,8 @@ export const SideBar = ({drawerWidth = 240 }) =>{
                                         <TurnedInNot/>
                                     </ListItemIcon>
                                     <Grid container>
-                                        <ListItemText primary={text}/>
-                                        <ListItemText primary={'lorem sbd kjbfjkbs bhg hig gi hyfkj'}/>
+                                        <ListItemText primary={ text }/>
+                                        <ListItemText secondary={'lorem sbd kjbfjkbs bhg hig gi hyfkj'}/>
                                     </Grid>
                                 </ListItemButton>
                             </ListItem>
