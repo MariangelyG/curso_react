@@ -6,15 +6,13 @@ import { AddOutlined } from "@mui/icons-material"
 export const JournalPage = () => {
   return (
     <JournalLayout>
-
-      {/* <Typography>Lorem ipsum, gcnjgfjff fcffhfg ffdgj fdjg dolor sit amet consectetur adipisicing elit.</Typography> */}
    
-  <NothingSelectedView/>
-    <NoteView/>
+      {/* <NothingSelectedView/> */}
+       <NoteView/>
 
-    <IconButton
-      size="large"
-      sx={{
+      <IconButton
+        size="large"
+        sx={{
         color:'white',
         backgroundColor:'error.main',
         ':hover': {backgroundColor: 'error.main', opacity: 0.9},
